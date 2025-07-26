@@ -1,0 +1,145 @@
+[data-design="flat"] .card-design {
+    background-color: transparent;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+
+    &:hover {
+        .card-block {
+            background-color: var(--bg-2);
+        }
+    }
+
+    .card-block {
+        background-color: transparent;
+    }
+}
+
+[data-design="flat"] .elipsis-design {
+    background-color: transparent;
+    border: none;
+
+    .button {
+        background-color: var(--bg-1);
+        border: none;
+    }
+}
+
+[data-design="flat"] .control-panel-design {
+    background-color: var(--bg-2);
+}
+
+[data-design="flat"] .btn-design {
+    border: none;
+
+    .bg {
+        border-radius: 50px !important;
+        background-color: var(--text);
+
+        svg {
+            fill: var(--bg-2);
+
+            path {
+                fill: var(--bg-2) !important;
+                stroke: var(--bg-2) !important;
+            }
+        }
+    }
+
+    &:active {
+        .bg {
+            background-color: var(--text-muted);
+
+            svg {
+                scale: 0.9;
+            }
+        }
+    }
+}
+
+[data-design="flat"] .slider-design {
+    .bg {
+        .slider {
+            background-color: var(--bg-3) !important;
+            border-radius: 2px !important;
+            height: 6px !important;
+
+            .progress {
+                height: 100% !important;
+                height: 6px !important;
+            }
+
+            &:hover {
+                background-color: var(--bg-4) !important;
+
+                .thumb {
+                    display: flex;
+                }
+            }
+        }
+    }
+}
+
+[data-design="flat"] .slider-design {
+    .bg .slider {
+        background-color: var(--bg-3) !important;
+        border-radius: 10px !important;
+
+        .progress {
+            border-radius: 10px !important;
+            height: 100%;
+            background-color: var(--text);
+        }
+
+        .thumb {
+            height: calc(100% + 4px) !important;
+        }
+    }
+}
+
+[data-design="flat"] .btn-design-simple {
+    border: 1px solid var(--bg-2);
+
+    .bg {
+        padding: 0.25rem;
+        background-color: var(--bg-2) !important;
+
+        svg {
+            fill: var(--bg-5);
+        }
+    }
+
+    &:hover,
+    &.active {
+        .bg {
+            svg {
+                fill: var(--text);
+            }
+        }
+    }
+
+    &.active {
+        .bg {
+            background-color: var(--bg-3) !important;
+        }
+    }
+}
+
+[data-design="flat"] .interaction-button-design {
+
+    &:hover,
+    &.focused {
+        background-color: var(--bg-3) !important;
+
+        svg {
+            fill: var(--bg-5) !important;
+        }
+    }
+
+    &.active {
+        background-color: var(--accent-text) !important;
+
+        svg {
+            fill: var(--accent-bg-lighter) !important;
+        }
+    }
+}

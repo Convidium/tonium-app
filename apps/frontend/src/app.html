@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+
+<head>
+	<meta charset="utf-8" />
+	<link rel="icon" href="%sveltekit.assets%/ToniumLogo.svg" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="/styles/fonts.scss" />
+	<link rel="stylesheet" href="/styles/global.scss" />
+	<link rel="stylesheet" href="/styles/scrollbar.scss" />
+	<link rel="stylesheet" href="/styles/buttons.scss" />
+	%sveltekit.head%
+</head>
+<script>
+	(() => {
+		try {
+			const theme = localStorage.getItem('theme');
+			const design = localStorage.getItem('design');
+			if (theme) {
+				document.documentElement.setAttribute('data-theme', theme);
+			}
+			if (design) {
+				document.documentElement.setAttribute('data-design', design);
+			}
+		} catch (error) {
+			document.documentElement.setAttribute('data-theme', 'light');
+			document.documentElement.setAttribute('data-design', 'default');
+		}
+	})();
+</script>
+
+<body data-sveltekit-preload-data="hover">
+	<div style="display: contents">%sveltekit.body%</div>
+</body>
+
+</html>

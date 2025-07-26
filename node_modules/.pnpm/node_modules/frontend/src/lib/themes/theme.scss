@@ -1,0 +1,64 @@
+[data-theme="light"] {
+    --bg-1: hsl(0, 0%, 96%);
+    --bg-2: hsl(0, 0%, 90%);
+    --bg-3: hsl(0, 0%, 84%);
+    --bg-4: hsl(0, 0%, 78%);
+    --bg-5: hsl(0, 0%, 70%);
+
+    --text-h: 0;
+    --text-s: 0%;
+    --text-l: 5%;
+
+    --text: hsl(var(--text-h), var(--text-s), var(--text-l));
+    --text-muted: hsl(0, 0%, 30%);
+    --text-very-muted: hsl(0, 0%, 60%);
+
+    --accent-bg-starker: hsl(0, 20%, 90%);
+    --accent-bg: hsl(0, 65%, 50%);
+    --accent-bg-lighter: hsl(0, 65%, 50%);
+    --accent-text: hsl(0, 65%, 10%);
+    --accent-bg-t-9: hsla(0, 65%, 50%, 90%);
+
+    --accent-bg-1: hsl(0, 65%, 80%);
+    --accent-bg-2: hsl(0, 65%, 60%);
+    --accent-bg-3: hsl(0, 65%, 40%);
+    --accent-bg-4: hsl(0, 75%, 30%);
+    --accent-text-muted: hsl(0, 75%, 20%);
+
+    --accent-bg-complementary: hsl(180, 65%, 20%);
+    --accent-text-complementary: hsl(180, 65%, 80%);
+}
+
+[data-theme="dark"]{
+    --bg-1: hsl(0, 0%, 7%);
+    --bg-2: hsl(0, 0%, 10%);
+    --bg-3: hsl(0, 0%, 16%);
+    --bg-4: hsl(0, 0%, 20%);
+    --bg-5: hsl(0, 0%, 30%);
+
+    
+    --text-h: 0;
+    --text-s: 0%;
+    --text-l: 95%;
+    
+    --text: hsl(0, 0%, 95%);
+    --text-muted: hsl(0, 0%, 70%);
+    --text-very-muted: hsl(0, 0%, 40%);
+
+    
+    --accent-bg-starker: hsl(0, 20%, 90%);
+    --accent-bg: hsl(0, 65%, 50%);
+    --accent-bg-lighter: hsl(0, 65%, 50%);
+    --accent-text: hsl(0, 65%, 10%);
+    --accent-bg-t-9: hsla(0, 65%, 50%, 90%);
+
+    --accent-bg-1: hsl(0, 65%, 10%);
+    --accent-bg-2: hsl(0, 65%, 20%);
+    --accent-bg-3: hsl(0, 65%, 30%);
+    --accent-bg-4: hsl(0, 65%, 40%);
+    --accent-text-muted: hsl(0, 65%, 70%);
+    --accent-text-very-muted: hsl(0, 65%, 40%);
+
+    --accent-bg-complementary: hsl(180, 65%, 20%);
+    --accent-text-complementary: hsl(180, 65%, 80%);
+}
