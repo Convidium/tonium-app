@@ -6,6 +6,7 @@ build/
 
 # Workspace-підпроєкти
 apps/*/node_modules
+apps/backend/node_modules
 apps/*/dist
 apps/*/.svelte-kit
 apps/*/.turbo
@@ -14,4 +15,4 @@ apps/*/.turbo
 apps/*/pnpm-lock.yaml
 packages/*/node_modules
 packages/*/dist
-packages/*/pnpm-lock.yaml
+packages/*/pnpm-lock.yamlnode_modules
